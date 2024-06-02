@@ -32,8 +32,11 @@ To run tests, simply call `make test` in your terminal. Ensure that you have Go 
 
 ## End-to-End Testing
 
+
 To perform an end-to-end test, follow these steps:
 
+
+0. Run `make build` This will start the application 
 1. Open Nakama server at [http://127.0.0.1:7351](http://127.0.0.1:7351).
 2. Navigate to the `API EXPLORER` menu.
 3. From the dropdown menu, select the `file_seeker` endpoint.
