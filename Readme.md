@@ -12,11 +12,11 @@ One of the guiding principles in this project is the separation of concerns. By 
 
 ## Minimal Abstraction Layers
 
-While abstraction layers can sometimes be beneficial for decoupling components and promoting code reusability, the Go community generally discourages excessive abstraction. In this project, we have adopted a pragmatic approach by using as few layers as possible while still maintaining a clear and understandable codebase. This decision aims to strike a balance between simplicity and flexibility, allowing for easier comprehension and maintenance of the code.
+While abstraction layers can sometimes be beneficial for decoupling components and promoting code reusability, the Go community generally discourages excessive abstraction. In this project, I have adopted a pragmatic approach by using as few layers as possible while still maintaining a clear and understandable codebase. This decision aims to strike a balance between simplicity and flexibility, allowing for easier comprehension and maintenance of the code.
 
 ## No Mock Library Usage
 
-Due to the nature of the codebase in terms of its size and complexity, we have opted not to use any mock library. Instead, we have focused on writing straightforward and easily understandable test cases that directly interact with the components being tested. This approach helps in keeping the test suite lightweight and maintains clarity, especially in smaller projects where the overhead of using mock libraries may outweigh their benefits.
+Due to the nature of the codebase in terms of its size and complexity, I have opted not to use any mock library. Instead, I have focused on writing straightforward and easily understandable test cases that directly interact with the components being tested. This approach helps in keeping the test suite lightweight and maintains clarity, especially in smaller projects where the overhead of using mock libraries may outweigh their benefits.
 
 ## Continuous Learning
 
@@ -24,7 +24,7 @@ Given more time, a deeper exploration of the Nakama Server Framework documentati
 
 ## Assumptions
 
-This project makes certain assumptions to streamline development and testing processes. Specifically, it assumes the existence of a file named `1.0.1.json` within the `core` folder. This file serves as a fixture or sample data source, facilitating testing through API calls. By establishing such conventions, we aim to simplify the setup and execution of test scenarios, promoting efficiency and consistency in the development workflow.
+This project makes certain assumptions to streamline development and testing processes. Specifically, it assumes the existence of a file named `1.0.1.json` within the `core` folder. This file serves as a fixture or sample data source, facilitating testing through API calls. By establishing such conventions, I aim to simplify the setup and execution of test scenarios, promoting efficiency and consistency in the development workflow.
 
 ## Running Tests
 
@@ -36,7 +36,7 @@ To run tests, simply call `make test` in your terminal. Ensure that you have Go 
 To perform an end-to-end test, follow these steps:
 
 
-0. Run `make build` This will start the application 
+0. Run `make run` This will start the application 
 1. Open Nakama server at [http://127.0.0.1:7351](http://127.0.0.1:7351).
 2. Navigate to the `API EXPLORER` menu.
 3. From the dropdown menu, select the `file_seeker` endpoint.
